@@ -25,6 +25,11 @@ get '/:task' do
 end
 
 post '/' do
-  @task = params[:task]
-  slim :task
+  Task.create  params[:task]
+  redirect to('/')
+end
+
+delete '/task/:id' do
+  Task.get(params[:id]).destroy
+  redirect to('/')
 end
