@@ -5,7 +5,6 @@
 .tasks{
 	padding:0;
 	list-style:none;
-	width:400px;
 }
 
 .task{
@@ -35,7 +34,7 @@ form.delete{
 form.delete input{
 	background:none;
 	cursor:pointer;
-	border:none;
+	border:solid 1px gray;
 }
 
 .lists{

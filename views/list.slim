@@ -7,4 +7,4 @@ li.list
       == slim :task, locals: { task: task }
   form.destroy action="/list/#{list.id}" method="POST"
     input type="hidden" name="_method" value="DELETE"
-    input type="submit" value="&times;"
+    input type="submit" value="Delete List" title="Delete List"

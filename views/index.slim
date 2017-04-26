@@ -1,11 +1,11 @@
-form action="/" method="POST"
-  input type="text" name="task[name]"
-  input.button type="submit" value="New Task >>"
+/ form action="/" method="POST"
+/   input type="text" name="task[name]"
+/   input.button type="submit" value="New Task >>"
 
-h2 My Tasks
+/ h2 My Tasks
 
-ul.tasks
-  - @tasks.each do |task|
+/ ul.tasks
+/   - @tasks.each do |task|
     == slim :task, locals: { task: task }
 
 form.new action="/new/list" method="POST"
